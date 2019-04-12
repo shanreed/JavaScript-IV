@@ -34,10 +34,11 @@ class Student extends Person {
         this.previousBackground = props.previousBackground;
         this.className = props.className;
         this.favSubjects = props.favSubjects;
+        this.earnedGrade = Math.floor(Math.random() * 99) + 1  
 
     }
     listsSubjects(subjects) {
-        return subjects
+        return subjects.join(' ');
     };
     prAssignment(subject) {
         return `${this.name} has submitted a PR for ${subject}.`
